@@ -6,9 +6,10 @@ cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 print("Welcome to Blackjack!\n\n")
 
+You_Won = 0
+Opponent_won = 0
+
 while True:
-    You_Won=0
-    Opponent_won=0
     Your_cards = []
     opponent_cards = []
     for _ in range(2):
@@ -63,7 +64,7 @@ while True:
             print("It's a draw!")
         else:
             print("You Lost!")
-            opponent_cards+=1
+            Opponent_won+=1
 
     while True:
         should_continue = input("Do you want a new match? (Y/N): ").upper()
